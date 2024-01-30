@@ -140,7 +140,3 @@ resource "aws_lb_listener" "listener" {
 		type = "forward"
 }
 }
-
-output "loadbalancerdns" {
- value = aws_lb.myalb.dns_name
-}
