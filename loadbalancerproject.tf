@@ -102,7 +102,7 @@ resource "aws_lb" "myalb" {
 	internal = false
 	load_balancer_type = "application"
 
-	security_groups = [aws_security_group.mysg1]
+	security_groups = [aws_security_group.mysg1.id]
 	subnets = [aws_subnet.mysubnet1.id, aws_subnet.mysubnet2.id]
 }
 
