@@ -131,7 +131,7 @@ resource "aws_lb_target_group_attachment" "lbattach2" {
 }
 
 resource "aws_lb_listener" "listener" {
-	load_balancer_arn = aws_lb_myalb.arn
+	load_balancer_arn = aws_lb.myalb.arn
 	port = 80
 	protocol = "HTTP"
 	
